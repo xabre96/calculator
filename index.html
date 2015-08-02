@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Grumpy Calculator</title>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="border">
+            <section>
+                <header>
+                    <input type="text" id="display" disabled=""/>
+                    <br/>
+                    <button id="reset" onclick="reset()">C</button>
+                    <button id="reset2">CE</button>
+                    <button id="del" onclick="del()">del</button>
+                    <button class="operator" id="divide" onclick="operation('/')">/</button>
+                </header>
+                <main>
+                    <div class="main">
+                        <button class="num" id="num7" value="7" onclick="numButton(7)">7</button>
+                        <button class="num" id="num8" value="8" onclick="numButton(8)">8</button>
+                        <button class="num" id="num9" value="9" onclick="numButton(9)">9</button>
+                        <button class="operator" id="add" onclick="operation('+')">+</button>
+                    </div>
+                    <div class="main">
+                        <button class="num" id="num4" value="4" onclick="numButton(4)">4</button>
+                        <button class="num" id="num5" value="5" onclick="numButton(5)">5</button>
+                        <button class="num" id="num6" value="6" onclick="numButton(6)">6</button>
+                        <button class="operator" id="subtract" onclick="operation('-')">-</button>
+                    </div>
+                    <div class="main">
+                        <button class="num" id="num1" value="1" onclick="numButton(1)">1</button>
+                        <button class="num" id="num2" value="2" onclick="numButton(2)">2</button>
+                        <button class="num" id="num3" value="3" onclick="numButton(3)">3</button>
+                        <button class="operator" id="multiply" onclick="operation('*')">*</button>
+                    </div>
+                    <div>
+                        <button class="zero" id="num0" value="0" onclick="numButton(0)">0</button>
+                        <button id="equals" onclick="compute()">=</button>
+                        <button id="decimal" onclick="decimal()">.</button>
+                    </div>
+                </main>
+            </section>
+
+        </div>
+        <h3>The Grumpy Calculator</h3>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---
+Author: Xan Gutierrez
+Date: 15-07-16
+-->
